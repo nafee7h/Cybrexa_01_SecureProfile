@@ -1,71 +1,159 @@
+  GNU nano 8.7                                                                                                                                                                                                                                                                                                                             skills.html                                                                                                                                                                                                                                                                                                                                       
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills | Muhammed Nafih</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | Muhammed Nafih</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="fade-in">
-        <h1>My Skills</h1>
-        <p>Cybersecurity and technical skills I am actively developing through hands-on practice</p>
-    </header>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<canvas id="stars-canvas"></canvas>
 
-    <nav class="fade-in">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<div class="site-wrapper">
 
-    <!-- Cybersecurity Skills -->
-    <section class="fade-in">
-        <h2>Cybersecurity Skills</h2>
-        <ul>
-            <li>Web Application Security Testing (XSS, SQL Injection, IDOR)</li>
-            <li>Reconnaissance & Enumeration (Nmap, Amass, nslookup)</li>
-            <li>Directory & Endpoint Discovery (FFUF, Gobuster, httpx)</li>
-            <li>HTTP/HTTPS Traffic Analysis (Burp Suite)</li>
-            <li>OWASP Top 10 (Basic Understanding)</li>
-            <li>CTF & Lab Practice (TryHackMe, Hack The Box)</li>
-        </ul>
-    </section>
+  <header style="padding-bottom: 20px;">
+    <div class="header-glow-ring" style="opacity:0.4;"></div>
+    <div class="name-tag" style="font-size:clamp(1.5rem,4vw,2.8rem);">SKILL MATRIX</div>
+  </header>
 
-    <!-- Tools -->
-    <section class="fade-in">
-        <h2>Tools & Technologies</h2>
-        <ul>
-            <li>Burp Suite</li>
-            <li>Wireshark</li>
-            <li>Nmap</li>
-            <li>FFUF, Gobuster, Dirsearch</li>
-            <li>Amass, httpx</li>
-        </ul>
-    </section>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="skills.html" class="active">SKILLS</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
 
-    <!-- Technical Skills -->
-    <section class="fade-in">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>Linux (Commands, basic scripting, system navigation)</li>
-            <li>Networking Fundamentals (TCP/IP, ports, packet flow)</li>
-            <li>Web Technologies (HTML, CSS, JavaScript - basic)</li>
-            <li>Programming (Python, C, C++, SQL - basic level)</li>
-            <li>Version Control (Git & GitHub)</li>
-            <li>System Setup & Troubleshooting</li>
-        </ul>
-    </section>
+  <main>
+    <!-- Skills Grid -->
+    <div class="page-section">
+      <div class="card">
+        <div class="card-bg-grid"></div>
+        <div class="card-corner tl"></div><div class="card-corner tr"></div>
+        <div class="card-corner bl"></div><div class="card-corner br"></div>
+        <div class="section-label">// CAPABILITIES.SH</div>
+        <h2>Cybersecurity and Technical Skills</h2>
+        <p style="margin-bottom:28px;">Cybersecurity and technical skills I am actively developing through hands-on practice.</p>
+        <div class="skills-grid">
 
-    <!-- Projects -->
-    <section class="fade-in">
-        <h2>Projects & Practice</h2>
-        <ul>
-            <li>TCP Packet Analyzer using Python (Scapy)</li>
-            <li>Web Security Testing using Burp Suite</li>
-            <li>Hands-on Labs and Vulnerability Practice (XSS, SQLi, IDOR)</li>
-        </ul>
-    </section>
+          <div class="skill-group">
+            <h3>Cybersecurity Skills</h3>
+            <ul>
+              <li>Web Application Security Testing (XSS, SQLi, IDOR)</li>
+              <li>Reconnaissance & Enumeration (Nmap, Amass, nslookup)</li>
+              <li>Directory & Endpoint Discovery (FFUF, Gobuster, Intruder)</li>
+              <li>HTTP/HTTPS Traffic Analysis (Burp Suite)</li>
+              <li>OWASP Top 10 (Basic Understanding)</li>
+              <li>CTF & Lab Practice (TryHackMe, Hack The Box)</li>
+            </ul>
+          </div>
 
+          <div class="skill-group">
+            <h3>Tools & Technologies</h3>
+            <ul>
+              <li>Burp Suite</li>
+              <li>Wireshark</li>
+              <li>Nmap</li>
+              <li>FFUF, Gobuster, Dirsearch</li>
+              <li>Naabu, Httpx</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>Technical Skills</h3>
+            <ul>
+              <li>Linux (Commands, basic scripting, system navigation)</li>
+              <li>Networking Fundamentals (TCP/IP, ports, packet flow)</li>
+              <li>Web Technologies (HTML, CSS, JavaScript — basic level)</li>
+              <li>Programming (Python, C, C++, SQL — basic level)</li>
+              <li>Version Control (Git & GitHub)</li>
+              <li>System Setup & Troubleshooting</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>Projects & Practice</h3>
+            <ul>
+              <li>TCP Packet Analyzer using Python (Scapy/Pcap)</li>
+              <li>Web Security Testing using Burp Suite</li>
+              <li>Hands-on Labs and Vulnerability Practice (XSS, SQLi, IDOR)</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Progress bars -->
+    <div class="page-section">
+      <div class="card">
+        <div class="card-bg-grid"></div>
+        <div class="card-corner tl"></div><div class="card-corner tr"></div>
+        <div class="card-corner bl"></div><div class="card-corner br"></div>
+        <div class="section-label">// PROFICIENCY.SCAN</div>
+        <h2>Skill Levels</h2>
+
+        <div class="progress-item">
+          <div class="progress-label"><span>Web App Pentesting</span><span>65%</span></div>
+          <div class="progress-bar"><div class="progress-fill" data-width="65"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-label"><span>Linux & CLI</span><span>70%</span></div>
+          <div class="progress-bar"><div class="progress-fill" data-width="70"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-label"><span>Burp Suite</span><span>60%</span></div>
+          <div class="progress-bar"><div class="progress-fill" data-width="60"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-label"><span>Python Scripting</span><span>50%</span></div>
+          <div class="progress-bar"><div class="progress-fill" data-width="50"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-label"><span>Networking Fundamentals</span><span>60%</span></div>
+          <div class="progress-bar"><div class="progress-fill" data-width="60"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-label"><span>CTF / Practice Labs</span><span>55%</span></div>
+          <div class="progress-bar"><div class="progress-fill" data-width="55"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 <span>NAFIH AK</span> — BUILT IN THE TERMINAL, DEPLOYED IN THE SHADOWS
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+<script>
+  // Animate progress bars when visible
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.querySelectorAll('.progress-fill').forEach(bar => {
+          bar.style.width = bar.dataset.width + '%';
+        });
+      }
+    });
+  }, { threshold: 0.3 });
+
+  document.querySelectorAll('.card').forEach(c => observer.observe(c));
+</script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
