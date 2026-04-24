@@ -1,44 +1,123 @@
+  GNU nano 8.7                                                                                                                                                                                                                                                                                                                              index.html                                                                                                                                                                                                                                                                                                                                       
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NAFIH | Cybersecurity Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NAFIH | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>NAFIH</h1>
-        <p>Cybersecurity Student | Ethical Hacking Enthusiast</p>
-    </header>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<canvas id="stars-canvas"></canvas>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<div class="site-wrapper">
 
-    <hr>
+  <header>
+    <div class="floating-particles" id="particles"></div>
+    <div class="header-glow-ring"></div>
+    <div class="name-tag">NAFIH</div>
+    <p class="subtitle"><span id="typed-text"></span><span class="typing-cursor"></span></p>
+    <div class="status-bar">
+      <div class="status-pill"><span class="status-dot"></span> SYSTEM ONLINE</div>
+      <div class="status-pill"><span class="status-dot"></span> BCA STUDENT</div>
+      <div class="status-pill"><span class="status-dot"></span> ETHICAL HACKER</div>
+    </div>
+  </header>
 
-    <section>
+  <nav>
+    <a href="index.html" class="active">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="skills.html">SKILLS</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+
+  <main>
+    <div class="page-section">
+      <div class="card">
+        <div class="card-bg-grid"></div>
+        <div class="card-corner tl"></div><div class="card-corner tr"></div>
+        <div class="card-corner bl"></div><div class="card-corner br"></div>
+        <div class="section-label">// INIT SEQUENCE</div>
         <h2>About Me</h2>
-        <p>
-            I am a cybersecurity enthusiast and BCA student focused on web application 
-            security and penetration testing. I actively work on hands-on labs and projects 
-            to understand how real systems behave and where they fail.
-        </p>
-    </section>
+        <div class="about-intro">
+          <div class="avatar-frame">N</div>
+          <p>I am a cybersecurity enthusiast and BCA student focused on web application security and penetration testing. I actively work on hands-on labs and projects to understand how real systems behave and where they fail. My mission: find the cracks before the attackers do.</p>
+        </div>
+      </div>
+    </div>
 
-    <section>
+    <div class="page-section">
+      <div class="card">
+        <div class="card-bg-grid"></div>
+        <div class="card-corner tl"></div><div class="card-corner tr"></div>
+        <div class="card-corner bl"></div><div class="card-corner br"></div>
+        <div class="section-label">// OBJECTIVE</div>
         <h2>My Goal</h2>
-        <p>
-            To become a skilled cybersecurity professional specializing in penetration 
-            testing by continuously building practical experience through real-world 
-            projects and vulnerability analysis.
-        </p>
-    </section>
+        <p>To become a skilled cybersecurity professional specializing in penetration testing by continuously building practical experience through real-world projects and vulnerability analysis. Targeting certifications and CTF achievements that prove capability — not just knowledge.</p>
+      </div>
+    </div>
+  </main>
 
+  <footer>
+    &copy; 2025 <span>NAFIH AK</span> — BUILT IN THE TERMINAL, DEPLOYED IN THE SHADOWS
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+<script>
+  // Typing animation
+  const phrases = [
+    'Cybersecurity Student | Ethical Hacking Enthusiast',
+    'Web App Pentester in Training',
+    'Breaking Things to Build Better Ones'
+  ];
+  let phraseIndex = 0, charIndex = 0, deleting = false;
+  const el = document.getElementById('typed-text');
+
+  function typeLoop() {
+    const phrase = phrases[phraseIndex];
+    if (!deleting) {
+      el.textContent = phrase.slice(0, ++charIndex);
+      if (charIndex === phrase.length) { deleting = true; setTimeout(typeLoop, 2000); return; }
+    } else {
+      el.textContent = phrase.slice(0, --charIndex);
+      if (charIndex === 0) { deleting = false; phraseIndex = (phraseIndex + 1) % phrases.length; }
+    }
+    setTimeout(typeLoop, deleting ? 40 : 75);
+  }
+  setTimeout(typeLoop, 1500);
+
+  // Floating particles
+  const container = document.getElementById('particles');
+  for (let i = 0; i < 20; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    p.style.cssText = `left:${Math.random()*100}%;width:${Math.random()*3+1}px;height:${Math.random()*3+1}px;animation-duration:${Math.random()*6+4}s;animation-delay:${Math.random()*6}s;`;
+    container.appendChild(p);
+  }
+</script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,43 +1,80 @@
+  GNU nano 8.7                                                                                                                                                                                                                                                                                                                             contact.html                                                                                                                                                                                                                                                                                                                                      
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Muhammed Nafih AK</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Muhammed Nafih AK</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Contact Me</h1>
-        <p>Feel free to send a message</p>
-    </header>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<canvas id="stars-canvas"></canvas>
 
-    <section>
-        <form id="contactForm">
+<div class="site-wrapper">
 
-            <label>Name:</label><br>
-            <input type="text" id="name"><br><br>
+  <header style="padding-bottom: 20px;">
+    <div class="header-glow-ring" style="opacity:0.4;"></div>
+    <div class="name-tag" style="font-size:clamp(1.5rem,4vw,2.8rem);">CONTACT</div>
+    <p class="subtitle" style="opacity:1;animation:none;">Feel free to send a message</p>
+  </header>
 
-            <label>Email:</label><br>
-            <input type="email" id="email"><br><br>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="skills.html">SKILLS</a>
+    <a href="contact.html" class="active">CONTACT</a>
+  </nav>
 
-            <label>Message:</label><br>
-            <textarea id="message"></textarea><br><br>
+  <main>
+    <div class="page-section">
+      <div class="card">
+        <div class="card-bg-grid"></div>
+        <div class="card-corner tl"></div><div class="card-corner tr"></div>
+        <div class="card-corner bl"></div><div class="card-corner br"></div>
+        <div class="section-label">// TRANSMIT_MESSAGE.SH</div>
+        <h2>Open a Channel</h2>
 
-            <button type="submit">Send</button>
-        </form>
+        <div id="contactForm" class="form-grid">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name..." autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="your@email.com" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Type your message here..."></textarea>
+          </div>
+          <button class="btn-send" id="sendBtn">⟶ TRANSMIT</button>
+          <p id="response"></p>
+        </div>
 
-        <p id="response"></p>
-    </section>
+      </div>
+    </div>
+  </main>
 
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="skills.html">Skills</a>
-    </nav>
+  <footer>
+    &copy; 2025 <span>NAFIH AK</span> — BUILT IN THE TERMINAL, DEPLOYED IN THE SHADOWS
+  </footer>
 
-    <script src="script.js"></script>
+</div>
 
+<script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+

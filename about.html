@@ -1,64 +1,150 @@
+  GNU nano 8.7                                                                                                                                                                                                                                                                                                                              about.html                                                                                                                                                                                                                                                                                                                                       
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Nafih</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Nafih</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>About Me</h1>
-    </header>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<canvas id="stars-canvas"></canvas>
 
-    <section>
-        <p>
-            I am Muhammed Nafih AK, a BCA student with a strong interest in cybersecurity 
-            and ethical hacking. I am focused on building practical skills in 
-            web application security and penetration testing.
-        </p>
-    </section>
+<div class="site-wrapper">
 
-    <section>
+  <header style="padding-bottom: 20px;">
+    <div class="header-glow-ring" style="opacity:0.4;"></div>
+    <div class="name-tag" style="font-size:clamp(1.5rem,4vw,2.8rem);">ABOUT ME</div>
+  </header>
+
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="about.html" class="active">ABOUT</a>
+    <a href="skills.html">SKILLS</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+
+  <main>
+    <!-- Bio Card -->
+    <div class="page-section">
+      <div class="card">
+        <div class="card-bg-grid"></div>
+        <div class="card-corner tl"></div><div class="card-corner tr"></div>
+        <div class="card-corner bl"></div><div class="card-corner br"></div>
+        <div class="section-label">// PROFILE.TXT</div>
+        <h2>Who I Am</h2>
+        <div class="about-intro">
+          <div class="avatar-frame">N</div>
+          <p>I am <strong style="color:var(--blue-glow)">Muhammed Nafih AK</strong>, a BCA student with a deep passion for cybersecurity and ethical hacking. My focus is on building practical skills in web application security and penetration testing — learning not just the theory but actually doing it in labs, CTFs, and vulnerable machine environments.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education Card -->
+    <div class="page-section">
+      <div class="card">
+        <div class="card-bg-grid"></div>
+        <div class="card-corner tl"></div><div class="card-corner tr"></div>
+        <div class="card-corner bl"></div><div class="card-corner br"></div>
+        <div class="section-label">// EDUCATION</div>
         <h2>Education</h2>
-        <p>Bachelor of Computer Applications (BCA)</p>
-    </section>
+        <div class="skill-group" style="margin-top:0;border:none;padding:0;background:none;">
+          <ul>
+            <li style="font-size:1rem;color:var(--text);padding:12px 0;border-bottom:1px solid rgba(0,212,255,0.1);">
+              🎓 &nbsp; Bachelor of Computer Applications (BCA)
+            </li>
+            <li style="font-size:0.85rem;color:var(--text-dim);padding:8px 0;">
+              Specializing in Cybersecurity & Ethical Hacking pathways
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-    <section>
+    <!-- Roadmap Card -->
+    <div class="page-section">
+      <div class="card">
+        <div class="card-bg-grid"></div>
+        <div class="card-corner tl"></div><div class="card-corner tr"></div>
+        <div class="card-corner bl"></div><div class="card-corner br"></div>
+        <div class="section-label">// LEARNING_PATH.JSON</div>
         <h2>Cybersecurity Learning Roadmap</h2>
-        <ul>
-  <li><strong>Linux Fundamentals:</strong> Learn Linux basics like commands, permissions, users, and scripting for security tasks.</li>
-  
-  <li><strong>Networking & Internet Fundamentals:</strong> Understand TCP/IP, DNS, ports, and how network communication works.</li>
-  
-  <li><strong>Web Fundamentals:</strong> Learn how web applications work including frontend, backend, forms, and sessions.</li>
-  
-  <li><strong>HTTP/HTTPS Deep Dive:</strong> Understand requests, responses, headers, methods, and secure communication.</li>
-  
-  <li><strong>Web Application Architecture:</strong> Learn how servers, databases, and APIs interact in web applications.</li>
-  
-  <li><strong>OWASP Top 10:</strong> Study common vulnerabilities like XSS, SQL Injection, IDOR, and misconfigurations.</li>
-  
-  <li><strong>Vulnerability Assessment & VAPT:</strong> Learn reconnaissance, testing methods, and reporting vulnerabilities professionally.</li>
-  
-  <li><strong>Security Tools:</strong> Use tools like Burp Suite, Nmap, Wireshark, FFUF for testing and analysis.</li>
-  
-  <li><strong>Programming Basics:</strong> Learn HTML, JavaScript, Bash, and Python for automation and security testing.</li>
-  
-  <li><strong>Practice Platforms:</strong> Improve skills using labs like TryHackMe, Hack The Box, and PortSwigger.</li>
-  
-  <li><strong>Offline Labs:</strong> Practice on vulnerable apps like DVWA, Juice Shop, and VulnHub machines.</li>
-  
-  <li><strong>Professional Development:</strong> Read writeups, do CTFs, and build a strong portfolio and reports.</li>
-</ul>
-    </section>
+        <ul class="roadmap-list">
+          <li>
+            <div class="li-icon">01</div>
+            <div><strong>Linux Fundamentals</strong><span>Learn Linux basics: commands, permissions, users, and scripting for security tasks.</span></div>
+          </li>
+          <li>
+            <div class="li-icon">02</div>
+            <div><strong>Networking & Internet Fundamentals</strong><span>Understand TCP/IP, DNS, ports, and how network communication works.</span></div>
+          </li>
+          <li>
+            <div class="li-icon">03</div>
+            <div><strong>Web Fundamentals</strong><span>Learn how web applications work including frontend, backend, forms, and sessions.</span></div>
+          </li>
+          <li>
+            <div class="li-icon">04</div>
+            <div><strong>HTTP/HTTPS Deep Dive</strong><span>Understand requests, responses, headers, methods, and secure communication.</span></div>
+          </li>
+          <li>
+            <div class="li-icon">05</div>
+            <div><strong>Web Application Architecture</strong><span>Learn how servers, databases, and APIs interact in web applications.</span></div>
+          </li>
+          <li>
+            <div class="li-icon">06</div>
+            <div><strong>OWASP Top 10</strong><span>Study common vulnerabilities like XSS, SQL Injection, IDOR, and misconfigurations.</span></div>
+          </li>
+          <li>
+            <div class="li-icon">07</div>
+            <div><strong>Vulnerability Assessment & VAPT</strong><span>Learn reconnaissance, testing methods, and reporting vulnerabilities professionally.</span></div>
+          </li>
+          <li>
+            <div class="li-icon">08</div>
+            <div><strong>Security Tools</strong><span>Use tools like Burp Suite, Nmap, Wireshark, FFUF for testing and analysis.</span></div>
+          </li>
+          <li>
+            <div class="li-icon">09</div>
+            <div><strong>Programming Basics</strong><span>Learn HTML, JavaScript, Bash, and Python for automation and security testing.</span></div>
+          </li>
+          <li>
+            <div class="li-icon">10</div>
+            <div><strong>Practice Platforms</strong><span>Improve skills using labs like TryHackMe, Hack The Box, and PortSwigger.</span></div>
+          </li>
+          <li>
+            <div class="li-icon">11</div>
+            <div><strong>Offline Labs</strong><span>Practice on vulnerable apps like DVWA, Juice Shop, and VulnHub machines.</span></div>
+          </li>
+          <li>
+            <div class="li-icon">12</div>
+            <div><strong>Professional Development</strong><span>Read writeups, do CTFs, and build a strong portfolio and reports.</span></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
 
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="skills.html">Skills</a> |
-        <a href="contact.html">Contact</a>
-    </nav>
+  <footer>
+    &copy; 2025 <span>NAFIH AK</span> — BUILT IN THE TERMINAL, DEPLOYED IN THE SHADOWS
+  </footer>
 
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
