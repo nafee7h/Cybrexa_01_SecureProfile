@@ -21,7 +21,7 @@ If you discover a security vulnerability in this project, please **do not open a
 Instead, contact me directly:
 
 - 📧 **Email:** muhdnafihhh@gmail.com 
-- 🐙 **GitHub:** [@nafih](https://github.com/nafee7h)
+- 🐙 **GitHub:** [@nafee7h](https://github.com/nafee7h)
 
 I will respond within **48 hours** and aim to resolve confirmed vulnerabilities within **7 days**.
 
