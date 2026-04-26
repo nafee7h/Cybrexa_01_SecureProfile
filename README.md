@@ -1,35 +1,58 @@
-# 🔐 SecureProfile – Cybersecurity Portfolio Website
+k# 🔐 SecureProfile – Cybersecurity Portfolio Website
 
-A personal cybersecurity portfolio website built using HTML, CSS, and JavaScript.  
-This project showcases my skills, learning journey, and hands-on experience in web security and penetration testing.
+## 🌐 Live Demo
+https://nafee7h.github.io/Cybrexa_01_SecureProfile/
+
+---
+
+## 📌 Overview
+
+A cybersecurity-focused personal portfolio website built to demonstrate practical skills in web development and secure coding.
+
+This project showcases my learning journey in ethical hacking, web application security, and penetration testing, along with basic security implementations.
 
 ---
 
 ## 🚀 Features
 
-- Multi-page portfolio website (Home, About, Skills, Contact)
-- Clean dark-themed UI
-- Responsive layout
-- Contact form with input validation
-- Basic XSS (Cross-Site Scripting) prevention
-- Organized project structure
+- Multi-page portfolio (Home, About, Skills, Contact)
+- Dark-themed UI with animations and interactive effects
+- Typing animation and dynamic elements
+- Profile avatar integration
+- Fully deployed using GitHub Pages
+
+---
+
+## 🔑 Key Highlights
+
+- Built a complete portfolio website from scratch
+- Implemented input validation for contact form
+- Applied basic XSS (Cross-Site Scripting) prevention
+- Organized clean project structure
+- Successfully deployed live project
+
+---
+
+## 🔐 Security Implementation
+
+- Input sanitization to prevent script injection
+- Basic protection against XSS attacks
+- Client-side validation for user inputs
 
 ---
 
 ## 🧠 Skills Demonstrated
 
 ### Cybersecurity
-- Web Application Security Testing (XSS, SQL Injection, IDOR)
-- Reconnaissance & Enumeration (Nmap, Amass)
-- Directory & Endpoint Discovery (FFUF, Gobuster)
-- HTTP Traffic Analysis (Burp Suite)
-- OWASP Top 10 (Basic Understanding)
+- Web Application Security (XSS, SQL Injection basics, IDOR awareness)
+- OWASP Top 10 (basic understanding)
+- Reconnaissance concepts
 
 ### Technical
 - HTML, CSS, JavaScript
 - Linux fundamentals
-- Networking basics (TCP/IP, ports)
-- Git & GitHub version control
+- Networking basics
+- Git & GitHub
 
 ---
 
@@ -39,54 +62,81 @@ This project showcases my skills, learning journey, and hands-on experience in w
 - CSS3
 - JavaScript
 - Git & GitHub
+- GitHub Pages
 
 ---
 
 ## 📂 Project Structure
 
-SecureProfile/
+Cybrexa_01_SecureProfile/
 │
 ├── index.html
 ├── about.html
 ├── skills.html
 ├── contact.html
+│
 ├── style.css
 ├── script.js
-└── README.md
+│
+├── images/
+│ ├── profile.jpg
+│ ├── home/
+│ ├── skill/
+│ ├── contact/
+│ └── mobile view/
+│
+├── README.md
+├── SECURITY.md
 
 
----
-
-## 🔐 Security Features
-
-- Input validation for contact form
-- Basic XSS prevention using input sanitization
-- Safe handling of user inputs
-
----
-
-## 🎯 Goal of the Project
-
-To build a practical cybersecurity-focused portfolio while applying secure coding practices and demonstrating real-world skills.
 
 ---
 
-## 📌 Future Improvements
+## 📸 Screenshots
 
-- Add backend for contact form
-- Implement advanced validation & security
-- Improve UI with modern animations
-- Deploy live version (GitHub Pages / Netlify)
+### Home
+![Home](images/home/home 1.png)  
+![Home](images/home/home 2.png)
+
+### Skills
+![Skills](images/skill/skill 1.png)
+
+### Contact
+![Contact](images/contact/contact 1.png)
+
+### Mobile
+![Mobile](images/mobile%20view/mobile 1.png)
 
 ---
 
-## 🌐 Author
+## 🎯 Goal
 
-**Muhammed Nafih**  
-Cybersecurity Student | Aspiring Penetration Tester
+To build a practical cybersecurity portfolio demonstrating both development and secure coding fundamentals.
+
+---
+
+## 🔮 Future Improvements
+
+- Add backend functionality for contact form
+- Improve security implementations
+- Add real project showcase section
+
+---
+
+## 🔗 Links
+
+- 🌐 Live: https://nafee7h.github.io/Cybrexa_01_SecureProfile/
+- 💻 GitHub: https://github.com/nafee7h/Cybrexa_01_SecureProfile
+
+---
+
+## 👨‍💻 Author
+
+Muhammed Nafih  
+Cybersecurity Student | Aspiring Penetration Tester  
 
 ---
 
 ## ⭐ Note
 
-This project is part of my cybersecurity learning journey and internship work.
+This project is part of my cybersecurity internship and learning journey, focused on building practical, real-world skills.
