@@ -91,11 +91,6 @@ Cybrexa_01_SecureProfile/
 
 ## 📸 Screenshots
 
-### Home
-
-![home](images/home/home1.png)
-![home](images/home/home2.png)
-
 
 ### Skills
 ![Skills](images/skill/skill1.png)
