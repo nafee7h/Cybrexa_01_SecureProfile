@@ -1,4 +1,4 @@
-k# 🔐 SecureProfile – Cybersecurity Portfolio Website
+# 🔐 SecureProfile – Cybersecurity Portfolio Website
 
 ## 🌐 Live Demo
 https://nafee7h.github.io/Cybrexa_01_SecureProfile/
@@ -17,7 +17,7 @@ This project showcases my learning journey in ethical hacking, web application s
 
 - Multi-page portfolio (Home, About, Skills, Contact)
 - Dark-themed UI with animations and interactive effects
-- Typing animation and dynamic elements
+- Typing animation and dynamic UI elements
 - Profile avatar integration
 - Fully deployed using GitHub Pages
 
@@ -26,10 +26,10 @@ This project showcases my learning journey in ethical hacking, web application s
 ## 🔑 Key Highlights
 
 - Built a complete portfolio website from scratch
-- Implemented input validation for contact form
+- Implemented client-side input validation
 - Applied basic XSS (Cross-Site Scripting) prevention
 - Organized clean project structure
-- Successfully deployed live project
+- Successfully deployed the project live
 
 ---
 
@@ -67,7 +67,6 @@ This project showcases my learning journey in ethical hacking, web application s
 ---
 
 ## 📂 Project Structure
-
 Cybrexa_01_SecureProfile/
 │
 ├── index.html
@@ -80,14 +79,12 @@ Cybrexa_01_SecureProfile/
 │
 ├── images/
 │ ├── profile.jpg
-│ ├── home/
 │ ├── skill/
 │ ├── contact/
-│ └── mobile view/
+│ └── mobile_view/
 │
 ├── README.md
 ├── SECURITY.md
-
 
 
 ---
@@ -95,17 +92,22 @@ Cybrexa_01_SecureProfile/
 ## 📸 Screenshots
 
 ### Home
-![Home](images/home/home 1.png)  
-![Home](images/home/home 2.png)
+
+![home](images/home/home1.png)
+![home](images/home/home2.png)
+
 
 ### Skills
-![Skills](images/skill/skill 1.png)
+![Skills](images/skill/skill1.png)
+![Skills](images/skill/skill2.png)
 
 ### Contact
-![Contact](images/contact/contact 1.png)
+![Contact](images/contact/contact1.png)
+![Contact](images/contact/contact2.png)
 
-### Mobile
-![Mobile](images/mobile%20view/mobile 1.png)
+### Mobile View
+![Mobile](images/mobile_view/mobile1.png)
+![Mobile](images/mobile_view/mobile2.png)
 
 ---
 
